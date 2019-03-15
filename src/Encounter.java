@@ -20,7 +20,8 @@ public class Encounter
         int i = 1;
         for (String s : choices)
         {
-
+            System.out.println(i + ". " + s);
+            i++;
         }
     }
 }
