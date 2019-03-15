@@ -4,7 +4,12 @@ public class Prince extends Character
 
     public Prince ()
     {
+        alive = true;
         name = "Hamza";
         gold = 2147483647;
+    }
+
+    public void Dead(){
+        alive = false;
     }
 }

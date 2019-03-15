@@ -1,4 +1,6 @@
+import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
 
 public class Encounter
 {
@@ -23,5 +25,12 @@ public class Encounter
             System.out.println(i + ". " + s);
             i++;
         }
+    }
+
+    public int getChoice() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Your choice: ");
+        int i = in.nextInt();
+        return i;
     }
 }
