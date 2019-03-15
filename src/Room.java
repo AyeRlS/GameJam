@@ -1,12 +1,14 @@
+import java.util.List;
+
 public class Room
 {
     String name;
     String loot;
     String enemies;
     Encounter encounter;
-    Character[] characters;
+    List<Character> characters;
 
-    public Room(String name, String loot, String enemies, Encounter encounter, Character[] characters)
+    public Room(String name, String loot, String enemies, Encounter encounter, List<Character> characters)
     {
         this.name = name;
         this.loot = loot;
@@ -16,6 +18,7 @@ public class Room
     }
     public void Enter()
     {
-        
+        System.out.println("The Prince just entered : " + name);
+        Main.print(encounter.story);
     }
 }
