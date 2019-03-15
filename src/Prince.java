@@ -16,7 +16,6 @@ public class Prince extends Character
     public void Dead(){
         alive = false;
     }
-}
 
     public void DisplayInventory ()
     {

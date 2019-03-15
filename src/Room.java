@@ -16,12 +16,12 @@ public class Room
         this.encounter = encounter;
         this.characters = characters;
     }
-    public void Play()
+    public int Play()
     {
         System.out.println("The Prince just entered : " + name);
         //encounter.TellMe();
         encounter.DisplayChoices();
 
-        System.out.println(encounter.getChoice());
+        return encounter.getChoice();
     }
 }
