@@ -19,7 +19,7 @@ public class Room
     public void Enter()
     {
         System.out.println("The Prince just entered : " + name);
-        encounter.TellMe();
+        //encounter.TellMe();
         System.out.println(encounter.choices);
     }
 }

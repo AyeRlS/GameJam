@@ -64,6 +64,6 @@ public class Main {
 
         Encounter castleE = new Encounter(first, choices);
         Room castle = new Room("Castle", "None", "None", castleE, party);
-        castle.encounter.TellMe();
+        castle.Enter();
     }
 }

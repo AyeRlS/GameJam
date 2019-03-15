@@ -15,4 +15,12 @@ public class Encounter
     {
         Main.print(story);
     }
+    public void DisplayChoices ()
+    {
+        int i = 1;
+        for (String s : choices)
+        {
+
+        }
+    }
 }
