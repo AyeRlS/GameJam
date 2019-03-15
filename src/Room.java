@@ -19,6 +19,6 @@ public class Room
     public void Enter()
     {
         System.out.println("The Prince just entered : " + name);
-        Main.print(encounter.story);
+        encounter.TellMe();
     }
 }
