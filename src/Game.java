@@ -157,10 +157,17 @@ public class Game {
 
         }
 
+        int res_4 = roomList.get(4).Play();
+        if(res_4 == 1){
 
+        }
+        if(res_4 == 2){
+
+        }
     }
 
     private void GameOver(){
         System.out.println("You take a bad choice....");
+        System.exit(1);
     }
 }
