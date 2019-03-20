@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -17,8 +18,11 @@ public class Encounter
     {
         Main.print(story);
     }
-    public void DisplayChoices ()
+    public void DisplayChoices (String question)
     {
+        if(question != ""){
+            System.out.println("\n\n" + question);
+        }
         int i = 1;
         for (String s : choices)
         {
@@ -31,6 +35,8 @@ public class Encounter
         Scanner in = new Scanner(System.in);
         System.out.print("Your choice: ");
         int i = in.nextInt();
+
+        System.out.println("\n\n");
         return i;
     }
 }
