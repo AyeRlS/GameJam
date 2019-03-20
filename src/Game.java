@@ -68,7 +68,7 @@ public class Game {
                 "You look in your pocket and you only have 280 gold\n";
 
         encounterList.add(new Encounter(five,new ArrayList<String>()));
-        encounterList.get(4).choices.add("Hum let me think about it… Ok because i will not let you die my prince ;)");
+        encounterList.get(4).choices.add("Negociate.");
         encounterList.get(4).choices.add("Leave.");
         roomList.add(new Room("Forest", "None", "None", encounterList.get(4),"",party));
 
