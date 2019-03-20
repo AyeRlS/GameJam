@@ -60,8 +60,8 @@ public class Game {
         String fourth = "Now you understand that danger is everywhere you have to be in movement. \n" +
                 "You found a merchant in the middle of the wood. He sells weapon as sword or bow and arrow.";
         encounterList.add(new Encounter(fourth,new ArrayList<String>()));
-        encounterList.get(3).choices.add("Fight him with your basic equipment.");
-        encounterList.get(3).choices.add("Run.");
+        encounterList.get(3).choices.add("Sword.");
+        encounterList.get(3).choices.add("Bow & Arrow.");
         roomList.add(new Room("Forest", "None", "None", encounterList.get(3),"Hello young boy what can I do for you?",party));
 
         String five = "“The sword ? It’s 300 gold.”\n" +
@@ -159,11 +159,40 @@ public class Game {
 
         int res_4 = roomList.get(4).Play();
         if(res_4 == 1){
-
+            System.out.println("“Hum let me think about it… Ok because i will not let you die my prince ;)”");
         }
         if(res_4 == 2){
+            System.out.println("Die");
+            GameOver();
+        }
+
+
+        int res_5 = roomList.get(5).Play();
+        if(res_5 == 1){
+            System.out.println("The knight killed you, your equipment were too weak.");
+            GameOver();
+        }
+        if(res_5 == 2){
+            System.out.println("You killed by removing his helmet after a good dodge.\n");
+        }
+
+
+        int res_6 = roomList.get(6).Play();
+        if(res_6 == 1){
+            Hamza.inventory.add("Sword");
+        }
+        if(res_6 == 2){
+            Hamza.inventory.add("Shield");
+        }
+
+        int res_7 = roomList.get(7).Play();
+        if(res_7 == 1){
 
         }
+        if(res_7 == 2){
+
+        }
+
     }
 
     private void GameOver(){
