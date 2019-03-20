@@ -140,6 +140,22 @@ public class Game {
         }
 
 
+        int res_2 = roomList.get(2).Play();
+        if(res_2 == 1){
+            System.out.println("You win but you're hurt and your equipment is broken");
+        }
+        if(res_2 == 2){
+            System.out.println("You escape from him but he recognize you and he talk about you with his friends.");
+        }
+
+
+        int res_3 = roomList.get(3).Play();
+        if(res_3 == 1){
+
+        }
+        if(res_3 == 2){
+
+        }
 
 
     }
